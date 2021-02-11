@@ -1,6 +1,6 @@
 # SubDAO-Crust Integration
 
-## 1. Crust introduction
+## 1. Crust 
 Crust provides a decentralized storage network of Web3.0 ecosystem. It supports multiple storage layer protocols such as IPFS, and exposes storage interfaces to application layer.
 
 ## 2. Solutions
@@ -8,36 +8,33 @@ Crust provides a decentralized storage network of Web3.0 ecosystem. It supports 
 ### 2.1 SubDAO DApp/website deployment
 
 SubDAO could deploy websites or DApps on the Crust/IPFS network. The process is as follows:
-1. SubDAO stores a page in IPFS (you can also store a folder directly), and obtains corresponding file CIDs;
-2. SubDAO generates places storage orders with these CIDs in Crust Network;
-3. SubDAO deploys the website domains and the CIDs on IPNS;
-4. Users can access website and DApps deployed on Crust/IPFS;
+1. SubDAO stores a webpage in IPFS (also supporting the storage of a folder), and obtains corresponding file CID;
+2. SubDAO places storage order with these CID in Crust Network;
+3. SubDAO deploys the website domain and the CID on IPNS;
+4. Users can access the website or DApps deployed on Crust/IPFS;
 * For exapmle: [polkadot apps wallet with IPFS](https://polkadot.js.org/) (IPFS Version)
 
 ### 2.2 DAO data storage
-SubDAO could store files such as rich text materials or forum discussion content submitted by users on the Crust/IPFS network. The process is as follows:
+SubDAO can store files, such as rich text materials or forum discussion data, submitted by users on Crust/IPFS Network. The process is as follows:
 
-1. SubDAO combines rich text documents or forum discussion contents into files or folders and stores them in IPFS Network and obtains corresponding file CIDs;
-2. SubDAO generates places storage orders with these CIDs in Crust Network;
-3. SubDAO users could use these CIDs to retrieve corresponding files from Crust/IPFS Network;
+1. SubDAO combines rich text documents or forum discussion contents into files or folders and stores them on IPFS to obtain corresponding file CIDs;
+2. SubDAO places storage orders for these CIDs on Crust Network;
+3. SubDAO users can use these CIDs to retrieve corresponding files on Crust/IPFS Network;
 
+## 3. Development phases
 
-## 3. Development plan
+Crust [Storage Order](https://wiki.crust.network/docs/en/crustIntegrationGuide) is expected to be available at the end of February. Consequently, we divide the development of SubDAO into two phases.
 
-
-The [storage order](https://wiki.crust.network/docs/en/crustIntegrationGuide) function of Crust is expected to go online at the end of February. Therefore, we divide the development of SubDAO into two stages.
-
-
-### Stage 1：SubDAO integrates IPFS
+### Stage 1：SubDAO-IPFS integration
 
 * Time: Before March 1st 
-* Development work: It is recommended that SubDAO to integrate the [IPFS standard interfaces](https://docs.ipfs.io/reference/) in the first stage, including ipfs add, ipfs get, ipfs gateway and ipns
-* Target: SubDAO can deploy DApp in the local IPFS, and SubDAO's rich text and discussion data can be accessed through the local IPFS network
+* Development details: It is recommended that SubDAO integrate the [IPFS standard interfaces](https://docs.ipfs.io/reference/) including ipfs add, ipfs get, ipfs gateway and ipns in this stage 
+* Target: SubDAO can deploy Dapps on the local IPFS, and SubDAO's rich text and discussion data can be accessed through the local IPFS network
 
-### Stage 2: SubDAO integrates Crust
+
+### Stage 2: SubDAO-Crust integration
 
 * Time: After March 1st
-* Development work: SubDAO integrates the Crust storage order function
-* Target: SubDAO data is reliably stored by Crust/IPFS network
-
+* Development details: SubDAO integrates the storage order features of Crust 
+* Target: SubDAO data is reliably stored on Crust/IPFS Network
 
