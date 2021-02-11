@@ -10,7 +10,7 @@ Crust provides a decentralized storage network of Web3.0 ecosystem. It supports 
 SubDAO could deploy websites or DApps on the Crust/IPFS network. The process is as follows:
 1. SubDAO stores a webpage in IPFS (also supporting the storage of a folder), and obtains corresponding file CID;
 2. SubDAO places storage order with these CID in Crust Network;
-3. SubDAO deploys the website domain and the CID on IPNS;
+3. SubDAO deploys the website domain with the CID on IPNS;
 4. Users can access the website or DApps deployed on Crust/IPFS;
 * For exapmle: [polkadot apps wallet with IPFS](https://polkadot.js.org/) (IPFS Version)
 
